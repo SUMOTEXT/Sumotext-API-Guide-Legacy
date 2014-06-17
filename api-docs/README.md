@@ -15,3 +15,5 @@ Contact Sumotext at 1-800-480-1248 to set up your accound. The `shortcode` and `
 2. [Sending an MT](sending-mt.md)
 3. [Carrier Code Lookup](carrier-code-lookup.md)
 4. [Fetching MT Delivery Reports](fetching-mt-delivery-reports.md)
+5. [Custom Web Form](custom-web-form.md)
+6. [Receiving Post Data](receiving-post-data.md)
