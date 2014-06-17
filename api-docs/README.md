@@ -8,3 +8,7 @@ For developers who prefer to automate their mobile messaging programs from inter
 
 ###Finding your credentials
 Contact Sumotext at 1-800-480-1248 to set up your accound. The `shortcode` and `key` that your marketing campaign is on will be used as paremeters when calling the API.
+
+###Table of Contents
+
+1. [Receiving an MO](receiving-mo.md)
