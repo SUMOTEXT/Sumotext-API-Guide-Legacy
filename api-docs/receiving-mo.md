@@ -5,6 +5,7 @@ Receiving an MO
 
 The SUMOTEXT platform can be configured to forward 'some' or 'all' mobile originated (MO) messages directly to the client. When a mobile originated (MO) text message is received by the SUMOTEXT System, it can be posted as an HTTP Get to a webpage you have registered in our system. 
 
+### HTTP Method - `GET`
 ### Parameters
 Markdown | Less
 --- | --- 
