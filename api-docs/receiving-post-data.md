@@ -32,7 +32,7 @@ To register your web server to receive a POST from Sumotext...
 * `mobile`
 * `carrier`
 
-###Example
+#####Example
 ```
 http://www.yourdomain.com/Post.aspx?country=USA&shortcode=84700&key=SOMEKEY&mobile=2125551212&carrier=VERIZONUS&Name=Bill&DOB=1/1/2000&Zip=10024&msg=Somekey
 ```
@@ -59,3 +59,21 @@ shortcode | Short code
 key | Keyword
 reply | User response (“A” for example)
 label | Response label (for example, “Tampa”)
+
+##### Example
+```
+http://www.yourdomain.com/sumotext.aspx?mobile=2125551212&carrier=VERIZONUS&shortcode=84700&key=FB1&reply=A&city=Tampa
+```
+
+###Text-4-Info
+When a user texts a Text-4-Info keyword, their message can be posted to your web service. To register your web server to receive a POST for this event…
+
+1. Log in at sumotext.com.
+2. Go to the Campaign Modes tab.
+3. Go to the “Text-4-Info” tab.
+4. Add your server url to the “Server” field.
+
+#####Example
+```
+http://www.yourserver.com/yourpage.aspx?lead=keyword&&mobile=2125551212&msg=ServerMsg
+```
