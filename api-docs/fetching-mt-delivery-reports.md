@@ -40,7 +40,7 @@ Response | Description
 * Message successfully delivered to handset.
 * Message successfully sent to carrier.
 
-###False Messages
+####False Messages
 * Failed. We are unable to delier this message.
 * Not Delivered, Billing failed, Billing.
 * Not Delivered, Invalid destination, Destination permanent.
