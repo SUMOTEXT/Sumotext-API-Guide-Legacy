@@ -4,4 +4,7 @@ Sumotext API Guide
 > Use the Sumotext HTTPS API to integrate Sumotext events with your service.
 
 ###Overview
-For developers who prefer to automate their mobile messaging programs from internal data sources and event triggers, we also support API-only accounts with reliable, high throughput connectivity to our SMS, MMS, Coupon, and Mobile Wallet Gateways.
+For developers who prefer to automate their mobile messaging programs from internal data sources and event triggers, we support API-only accounts with reliable, high throughput connectivity to our SMS, MMS, Coupon, and Mobile Wallet Gateways.
+
+###Finding your credentials
+Contact Sumotext at 1-800-480-1248 to set up your accound. The `shortcode` and `key` that your marketing campaign is on will be used as paremeters when calling the API.
