@@ -13,3 +13,4 @@ Contact Sumotext at 1-800-480-1248 to set up your accound. The `shortcode` and `
 
 1. [Receiving an MO](receiving-mo.md)
 2. [Sending an MT](sending-mt.md)
+3. [Carrier Code Lookup](carrier-code-lookup.md)
