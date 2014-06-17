@@ -1,4 +1,4 @@
-Sumotext-API
+Sumotext API
 ============
 
-Read the [docs](api-docs/README.md) for the Sumotext API
+Read the [documentation](api-docs/README.md) for the Sumotext API
