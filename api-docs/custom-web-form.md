@@ -18,9 +18,6 @@ Param | Description
 `key` | Should reflect the keyword being used.
 `phone` | The mobile number opting in.
 `txt1` | Profile data field that matches the web form in the Sumotext online tools.
-<<<<<<< HEAD
 `txt2-txt11` | Up to 11 form fields for profile data. Fields not used should be left blank.
-=======
-`txt2-11` | Up to 11 form fields for profile data. Fields not used should be left blank.
->>>>>>> cbc70d228cab3cd24bf1c3331eb0b80db6b5b4cf
+
 
