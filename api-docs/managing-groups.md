@@ -11,17 +11,19 @@ The client can manage their groups through the Sumotext API. A client can clear 
 http://mosms.sumotext.com/secure/sumoGroup.aspx?
 ```
 
-### Parameters
+#### Request Parameters
 Params | Description
 ----|----
-country | Country associated with shortcode
-shortcode | Short code being used
-key | Keyword being used
-group | Name of the group to manage
-action | Add, delete, clear, or adddmember
-mobile | Mobile number of subscriber to add to group [Optional: may be left blank]
+`country` | Country associated with shortcode
+`shortcode` | Short code being used
+`key` | Keyword being used
+`group` | Name of the group to manage
+`action` | Add, delete, clear, or adddmember
+`mobile` | Mobile number of subscriber to add to group [Optional: may be left blank]
 
-### Responses
+#### Response Type - `string`
+#### Response Format - `Action {action} OK`
+#### Error Responses
 Response | Description
 --- | --- 
 `Action Add OK` | Successfully added.
