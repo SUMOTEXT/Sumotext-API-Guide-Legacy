@@ -32,7 +32,7 @@ curl --data "mobile=5015555555&carrier=VERIZONUS&shortcode=84700&key=SUMO&msg=ha
 5015555555:7A2D2AF7-6851-4D22-BD41-BD8EE94C061E
 ```
 
-### Responses
+### Error Responses
 Response | Description
 --- | --- 
 `{mobile}:NOTIP` | IP address not registered.
