@@ -17,10 +17,10 @@ http://www.yourserver.com/mo.aspx?
 Param | Description
 --- | --- 
 `mobile` | Mobile number SMS originated from. 
-`carrier` | Carrier code for Mobile Number.
-`smsid` | Unique SMS Identifier.
+`carrierId` | Carrier code for Mobile Number.
 `shortcode` | Short code used.
 `key` | Keyword, may be specific or default.
+`country` | Country SMS originated from.
 
 ##Example
 After the [postback URL](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api-docs/receiving-post-data.md#add-a-postback-url) is pointed to a web server, this is the `GET` request querystring parameters that Sumotext will post to the server.
