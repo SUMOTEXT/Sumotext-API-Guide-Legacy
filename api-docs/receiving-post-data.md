@@ -14,7 +14,7 @@ Sumotext collects data in 3 ways:
 
 Sumotext can be cinfigured to automatically post to a web service when these events fire.
 
-### Web Form Settings Tab
+###Add a Postback URL
 To register your web server to receive a POST from Sumotext...
 
 1. Log in at sumotext.com.
