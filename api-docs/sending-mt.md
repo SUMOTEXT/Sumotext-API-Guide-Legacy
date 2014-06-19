@@ -19,7 +19,7 @@ Param | Description
 `msg` | Message to be sent.
 
 #### Response type - `string`
-#### Response format - `{mobile}:{smsid}
+#### Response format - `{mobile}:{smsid}`
 
 ### Example
 
