@@ -4,9 +4,9 @@ Carrier Code Lookup
 
 There is a $0.005 charge to look up a mobile number's carrier code.
 
-#### HTTP Method - `GET`
+### HTTP Method - `GET`
 
-#### URL
+### URL
 ```
 http://mosms.sumotext.com/secure/sumoLookup.aspx?
 ```
@@ -18,11 +18,12 @@ Param | Description
 
 ####Response Type - `string`
 ####Response Format - `{carrier_code}`
-####Example
 ####Carrier Codes
 * VERIZONUS
 * CINGULARUS
-* 
+
+###Example
+
 *Querystring*
 ```
 http://mosms.sumotext.com/secure/sumoLookup.aspx?mobile={mobile}&shortcode={shortcode}
