@@ -17,8 +17,8 @@ Param | Description
 `shortcode` | Short code used.
 
 ####Response Type - `string`
-####Response Format - `{carrier_code}
-`
+####Response Format - `{carrier_code}`
+
 ####Carrier Codes
 * VERIZONUS
 * CINGULARUS
