@@ -9,7 +9,7 @@ Sending an MT
 https://mosms.sumotext.com/secure/sumoSend.aspx?
 ```
 
-### Parameters
+#### Request Parameters
 Param | Description
 --- | --- 
 `mobile` | Number to send MT to. 
@@ -17,6 +17,9 @@ Param | Description
 `shortcode` | Short code used.
 `key` | Keyword, may be specific or default.
 `msg` | Message to be sent.
+
+#### Response type - `string`
+#### Response format - `{mobile}:{smsid}
 
 ### Example
 
