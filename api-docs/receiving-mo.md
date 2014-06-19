@@ -21,3 +21,15 @@ Param | Description
 `smsid` | Unique SMS Identifier.
 `shortcode` | Short code used.
 `key` | Keyword, may be specific or default.
+
+##Example
+After the [postback URL](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api-docs/receiving-post-data.md#add-a-postback-url) is pointed to a web server, this is the `GET` request querystring parameters that Sumotext will post to the server.
+```javascript
+{ 
+	mobile : '5015551234',
+	carrierId : 'ATTUS',
+   	shortcode : '74700',
+   	key : 'TEST',
+   	country : 'USA'
+}
+````
