@@ -46,7 +46,7 @@ http://www.yourdomain.com/Post.aspx?country=USA&shortcode=84700&key=SOMEKEY&mobi
     country : 'USA',
     Name : 'Bill',
     DOB : '1/1/2000'
-    Zip : '10024`
+    Zip : '10024'
 }
 ```
 In this example, the client had their settings configured to Post the additional fields for Name, DOB, and Zip as parameters.
