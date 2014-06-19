@@ -11,11 +11,15 @@ You may receive a delivery report for an MT that was sent through the Sumotext A
 https://mosms.sumotext.com/secure/sumoReport.aspx?
 ```
 
-### Parameters
+#### Request Parameters
 Param | Description
 --- | --- 
 `smsid` | Unique smsid returned when sending the MT.
 `shortcode` | Short code used.
+
+#### Response Type - `string`
+#### Response Format - `{smsid}:{sent-status}:{true/false message}`
+where `sent-status` is either `TRUE` or `FALSE`, and the `true/false message` corresponds to one of the messages listed below.
 
 ### Example
 
@@ -28,19 +32,19 @@ curl --data "smsid=4CD3A94F-B462-44CD-9710-E220F244F82E&shortcode=74700" https:/
 4CD3A94F-B462-44CD-9710-E220F244F82E:TRUE:Sent by SUMOTEXT to Aggregator
 ```
 
-### Responses
+#### Error Responses
 Response | Description
 --- | --- 
 `{smsid}:TRUE:[True Message]` | Message successfully sent.
 `{smsid}:FALSE:[False Message]` | Message failed to deliver. See "Not Sent Messages" for list of error messages.
 `{smsid}:NOTFOUND:[single space char]` | The smsid is not in the system.
 
-####True Messages
+#####True Messages
 * Sent by Sumotext to Aggregator.
 * Message successfully delivered to handset.
 * Message successfully sent to carrier.
 
-####False Messages
+#####False Messages
 * Failed. We are unable to delier this message.
 * Not Delivered, Billing failed, Billing.
 * Not Delivered, Invalid destination, Destination permanent.
