@@ -2,7 +2,7 @@ Fetching MT Delivery Reports
 ========
 > Check the status of a sent SMS.
 
-You may receive a delivery report for an MT that was sent through the Sumotext API.
+You may receive a delivery report for an MT that was sent through the Sumotext API. This report indicates if the message corresponding to `smsid` was successfully delivered, and if it wasn't, gives a reason why.
 
 ### HTTP Method - `GET`
 
