@@ -28,7 +28,7 @@ To register your web server to receive a POST from Sumotext...
 
 * `country`
 * `short code`
-* `keyword`
+* `key`
 * `mobile`
 * `carrierId`
 
