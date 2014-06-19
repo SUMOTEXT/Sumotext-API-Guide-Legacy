@@ -18,10 +18,19 @@ Param | Description
 
 ####Response Type - `string`
 ####Response Format - `{carrier_code}`
-
+####Example
 ####Carrier Codes
 * VERIZONUS
 * CINGULARUS
+* 
+*Querystring*
+```
+http://mosms.sumotext.com/secure/sumoLookup.aspx?mobile={mobile}&shortcode={shortcode}
+```
+*Response*
+```
+CINGULARUS
+```
 
 #### Error Responses
 Response | Description
