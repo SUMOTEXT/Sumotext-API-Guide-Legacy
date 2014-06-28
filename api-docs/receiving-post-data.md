@@ -28,13 +28,26 @@ To register your web server to receive a POST from Sumotext...
 
 * `country`
 * `short code`
-* `keyword`
+* `key`
 * `mobile`
-* `carrier`
+* `carrierId`
 
 #####Example
 ```
-http://www.yourdomain.com/Post.aspx?country=USA&shortcode=84700&key=SOMEKEY&mobile=2125551212&carrier=VERIZONUS&Name=Bill&DOB=1/1/2000&Zip=10024&msg=Somekey
+http://www.yourdomain.com/Post.aspx?country=USA&shortcode=84700&key=SOMEKEY&mobile=2125551212&carrierId=VERIZONUS&Name=Bill&DOB=1/1/2000&Zip=10024
+```
+#####As .json
+```javascript
+{ 
+    mobile : '5015551234',
+    carrierId : 'ATTUS',
+    shortcode : '74700',
+    key : 'TEST',
+    country : 'USA',
+    Name : 'Bill',
+    DOB : '1/1/2000'
+    Zip : '10024'
+}
 ```
 In this example, the client had their settings configured to Post the additional fields for Name, DOB, and Zip as parameters.
 

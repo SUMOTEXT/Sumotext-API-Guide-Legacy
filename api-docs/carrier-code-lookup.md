@@ -10,13 +10,30 @@ There is a $0.005 charge to look up a mobile number's carrier code.
 ```
 http://mosms.sumotext.com/secure/sumoLookup.aspx?
 ```
-### Parameters
+#### Request Parameters
 Param | Description
 --- | --- 
 `mobile` | Number to send MT to. 
 `shortcode` | Short code used.
 
-### Responses
+####Response Type - `string`
+####Response Format - `{carrier_code}`
+####Carrier Codes
+* VERIZONUS
+* CINGULARUS
+
+###Example
+
+*Querystring*
+```
+http://mosms.sumotext.com/secure/sumoLookup.aspx?mobile={mobile}&shortcode={shortcode}
+```
+*Response*
+```
+CINGULARUS
+```
+
+#### Error Responses
 Response | Description
 --- | --- 
 `IP NOT REGISTERED` | IP address not registered.

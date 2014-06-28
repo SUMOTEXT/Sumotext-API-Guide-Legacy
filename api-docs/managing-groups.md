@@ -2,7 +2,16 @@ Managing Groups
 =====
 > Manage subscribers and groups.
 
-The client can manage their groups through the Sumotext API. A client can clear a group of its members, delete a group and its members, add a group to a keyword, and add a member to a group.
+The client can manage their groups through the Sumotext API. A client can perform the following actions:
+
+clear a group of its members, delete a group and its members, add a group to a keyword, and add a member to a group.
+
+Action | Description
+----- | -----
+`add` | Add a new group (named `{group}`) to a keyword
+`delete` | Delete a group and its members
+`clear` | Clear a group of its members
+`addmember` | Add a member (member corresponds to their `{mobile}`)
 
 ### HTTP Method - `GET`
 
@@ -11,17 +20,19 @@ The client can manage their groups through the Sumotext API. A client can clear 
 http://mosms.sumotext.com/secure/sumoGroup.aspx?
 ```
 
-### Parameters
+#### Request Parameters
 Params | Description
 ----|----
-country | Country associated with shortcode
-shortcode | Short code being used
-key | Keyword being used
-group | Name of the group to manage
-action | Add, delete, clear, or adddmember
-mobile | Mobile number of subscriber to add to group [Optional: may be left blank]
+`country` | Country associated with shortcode
+`shortcode` | Short code being used
+`key` | Keyword being used
+`group` | Name of the group to manage
+`action` | Add, delete, clear, or adddmember
+`mobile` | Mobile number of subscriber to add to group [Optional: may be left blank]
 
-### Responses
+#### Response Type - `string`
+#### Response Format - `Action {action} OK`
+#### Error Responses
 Response | Description
 --- | --- 
 `Action Add OK` | Successfully added.

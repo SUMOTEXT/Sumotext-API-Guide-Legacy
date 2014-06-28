@@ -10,7 +10,7 @@ The SUMOTEXT platform can be configured to forward 'some' or 'all' mobile origin
 ### HTTP Method - `GET`
 ### URL
 ```
-http://www.yourserver.com/mo.aspx?
+http://www.yourserver.com/your-endpoint
 ```
 
 ### Parameters
@@ -32,4 +32,8 @@ After the [postback URL](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/mas
    	key : 'TEST',
    	country : 'USA'
 }
+<<<<<<< HEAD
 ```
+=======
+````
+>>>>>>> 39935be3adfbba28819d93d90efa9698fb956df9
