@@ -6,9 +6,9 @@ You may receive a delivery report for an MT that was sent through the Sumotext A
 
 ### HTTP Method - `GET`
 
-### URL
+### Example URL
 ```
-https://mosms.sumotext.com/secure/sumoReport.aspx?
+https://mosms.sumotext.com/secure/sumoReport.aspx?smsid={smsid}&shortcode=74700
 ```
 
 #### Request Parameters
@@ -21,16 +21,6 @@ Param | Description
 #### Response Format - `{smsid}:{sent-status}:{true/false message}`
 where `sent-status` is either `TRUE` or `FALSE`, and the `true/false message` corresponds to one of the messages listed below.
 
-### Example
-
-*Call*
-```
-curl --data "smsid=4CD3A94F-B462-44CD-9710-E220F244F82E&shortcode=74700" https://mosms.sumotext.com/secure/sumoReport.aspx?
-```
-*Response*
-```
-4CD3A94F-B462-44CD-9710-E220F244F82E:TRUE:Sent by SUMOTEXT to Aggregator
-```
 
 #### Error Responses
 Response | Description

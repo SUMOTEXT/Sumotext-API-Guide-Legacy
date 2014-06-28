@@ -13,7 +13,7 @@ When you want to send an MT text message from your own system, SUMOTEXT will pro
 
 ### Example URL
 ```
-https://mosms.sumotext.com/secure/sumoSend.aspx?
+https://mosms.sumotext.com/secure/sumoSend.aspx?mobile=5015551234&carrier=ATTUS&shortcode=74700&key=SUMO&msg=hello
 ```
 
 #### Request Parameters

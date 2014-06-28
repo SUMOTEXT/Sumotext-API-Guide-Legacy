@@ -9,9 +9,9 @@ View [Appendix A](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api
 
 ### HTTP Method - `GET`
 
-### URL
+### Example URL
 ```
-http://mosms.sumotext.com/secure/sumoLookup.aspx?
+http://mosms.sumotext.com/secure/sumoLookup.aspx?mobile=5015551234&shortcode=74700
 ```
 #### Request Parameters
 Param | Description
