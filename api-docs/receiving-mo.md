@@ -27,7 +27,7 @@ Param | Description
 
 ##Example
 
-The post will be a fully formed URL with 6 query string parameters:
+The HTTP GET will be a fully formed URL with 6 query string parameters:
 <pre>
 https://www.yourserver.com/your-endpoint?mobile=2125551212&carrier=VERIZONUS&smsid=2xgh679okl34x&shortcode=84700&key=SUMOX&msg=have a nice day
 </pre>
