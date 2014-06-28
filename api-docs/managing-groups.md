@@ -31,11 +31,17 @@ Params | Description
 `mobile` | Mobile number of subscriber to add to group [Optional: may be left blank]
 
 #### Response Type - `string`
-#### Response Format - `Action {action} OK`
+#### Successful Response
+Response | Example | Description
+--- | --- | ---
+`Action {action} OK` | Action Add OK | Action was successfully applied.
+
+
 #### Error Responses
 Response | Description
 --- | --- 
-`Action Add OK` | Successfully added.
 `NOTIP` | IP adress making the API call not registered with Sumotext.
-`Action Add Error: [Error Descrioption]` | Error performing the action on the group.
+`Action {action} Error: [Error Descrioption]` | Error performing the action on the group.
+
+
 

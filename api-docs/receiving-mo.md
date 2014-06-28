@@ -1,39 +1,33 @@
-Receiving an MO
+Receiving a Mobile Originated (MO) Message
 =======
 
-> Receive post data when your shortcode/key gets a text.
+The SUMOTEXT online self-service campaign management tools are typically used to configure what happens when a user sends a text message to your short code.
+However, our platform and tools can be bypassed and your dedicated short code can be configured to instead forward 'some' or 'all' mobile originated (MO) messages directly to your server for you to respond based on your own business rules, logic, and data sources.
 
-The SUMOTEXT platform can be configured to forward 'some' or 'all' mobile originated (MO) messages directly to the client. When a mobile originated (MO) text message is received by the SUMOTEXT System, it can be posted as an HTTP Get to a webpage you have registered in our system.
+NOTE: This is different from the section that deals with 'CRM API CALLBACK' which is used to alert your service when the SUMOTEXT platform has collected an opt-in, opt-out, or a new profile element for a subscriber such as an email address.
 
-> Read about adding a postback URL [here](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api-docs/receiving-post-data.md#add-a-postback-url).
+ If you would like to bypass our platform and tools and receive 'some' or 'all' mobile originated (MO) messages directly to your server, please provide your account manager the the appropriate URL to register in our system. This can be HTTP or HTTPS. We strongly reccomend HTTPS.
+
 
 ### HTTP Method - `GET`
 ### URL
 ```
-http://www.yourserver.com/your-endpoint
+https://www.yourserver.com/your-endpoint
 ```
 
 ### Parameters
 Param | Description
 --- | --- 
 `mobile` | Mobile number SMS originated from. 
-`carrierId` | Carrier code for Mobile Number.
+`carrier` | Carrier code for Mobile Number.
+`smsid` | Unique SMS identifier
 `shortcode` | Short code used.
-`key` | Keyword, may be specific or default.
-`country` | Country SMS originated from.
+`key` | The keyword where the message is logged.
+`msg` | Complete message sent.
 
 ##Example
-After the [postback URL](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api-docs/receiving-post-data.md#add-a-postback-url) is pointed to a web server, this is the `GET` request querystring parameters that Sumotext will post to the server.
-```
-{ 
-	mobile : '5015551234',
-	carrierId : 'ATTUS',
-   	shortcode : '74700',
-   	key : 'TEST',
-   	country : 'USA'
-}
-<<<<<<< HEAD
-```
-=======
-````
->>>>>>> 39935be3adfbba28819d93d90efa9698fb956df9
+
+The post will be a fully formed URL with 6 query string parameters:
+<pre>
+https://www.yourserver.com/your-endpoint?mobile=2125551212&carrier=VERIZONUS&smsid=2xgh679okl34x&shortcode=84700&key=SUMOX&msg=have a nice day
+</pre>

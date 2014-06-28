@@ -4,6 +4,9 @@ Carrier Code Lookup
 
 There is a $0.005 charge to look up a mobile number's carrier code.
 
+####Carrier Codes
+View [Appendix A](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api-docs/appendices/appendix-a.md) for a list of all carrier codes.
+
 ### HTTP Method - `GET`
 
 ### URL
@@ -17,21 +20,10 @@ Param | Description
 `shortcode` | Short code used.
 
 ####Response Type - `string`
-####Response Format - `{carrier_code}`
-####Carrier Codes
-* VERIZONUS
-* CINGULARUS
-
-###Example
-
-*Querystring*
-```
-http://mosms.sumotext.com/secure/sumoLookup.aspx?mobile={mobile}&shortcode={shortcode}
-```
-*Response*
-```
-CINGULARUS
-```
+####Successful Response  - `{carrier_code}`
+Response | Example | Description
+--- | --- | ---
+`{carrier_code}` | ATTUS | Carrier code for the mobile number's carrier.
 
 #### Error Responses
 Response | Description
