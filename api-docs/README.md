@@ -30,5 +30,5 @@ The Sumotext platform can be configured to send your web server an http request 
 3. [Carrier Code Lookup](carrier-code-lookup.md)
 4. [Fetching MT Delivery Reports](fetching-mt-delivery-reports.md)
 5. [Custom Web Form](custom-web-form.md)
-6. [Receiving Post Data](receiving-post-data.md)
+6. [CRM API Callback](receiving-post-data.md)
 7. [Managing Groups](managing-groups.md)
