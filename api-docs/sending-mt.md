@@ -38,7 +38,7 @@ The response data comes as a string delimited by a ':' (colon).
 Field | Description
 --- | --- 
 `mobile` | Mobile number you sent MT to
-`smsid` | Unique ID for the SMS (used to [lookup delivery report](fetching-mt-delivery-report.md))
+`smsid` | Unique ID for the SMS (used to [lookup delivery report](fetching-mt-delivery-reports.md))
 
 The first line of the response contains this string. You may ignore the lines that follow (they contain the html markup that would call this method from a browser).
 
