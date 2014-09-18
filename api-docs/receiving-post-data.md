@@ -11,7 +11,7 @@ Sumotext collects data in 3 ways:
 2. *SMS Polls* - e.g. "Reply A (red) or B (blue)."
 3. *Web Forms* - submitted via browsers
 
-Sumotext can be cinfigured to automatically post to a web service when these events fire.
+Sumotext can be configured to automatically post to a web service when these events fire.
 
 ###Receiving Post Data (API Callbacks)
 The Sumotext platform can be configured to send your web server an HTTP request when these events are triggered. Follow the directions below to tell Sumotext where to point the HTTP calls:
