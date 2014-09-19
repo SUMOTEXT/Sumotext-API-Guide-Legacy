@@ -21,7 +21,14 @@ The Sumotext platform can be configured to send your web server an HTTP request 
 3. Go to the Web Form settings tab.
 4. Click "Edit Post CRM".
 5. Check the "Post" checkbox.
-6. Configure the Post parameters that Sumotext will send as a GET
+6.	Post Opt-In/Opt-Out: Selecting “msg” will post and return the text message from the mobile user. Selecting “Don’t Use” will not return the “msg” parameter. (See example below with “msg” selected.)
+
+###Example
+<pre class="code"><code>http://www.yourdomain.com/Post.aspx?mobile=2125551212&carrierId=VERIZONUS&key=SOMEKEYWORD&country=USA&shortcode=84700&Name=Mary Jane &Zip=10054&msg=MOBILEUSERSMESSAGE</code></pre>
+
+7.	Configure the Post parameters that Sumotext will send as a GET
+
+
 
 ###Sumotext will always post these 5 parameters first
 
@@ -37,6 +44,7 @@ It also includes the custom user fields that you specify in the GET call.
 <pre class="code"><code>http://www.yourdomain.com/Post.aspx?<span>country</span>=USA&<span>shortcode</span>=84700&<span>key</span>=SOMEKEY&<span>mobile</span>=2125551212&<span>carrierId</span>=VERIZONUS&<span>Name</span>=Bill&<span>DOB</span>=1/1/2000&<span>Zip</span>=10024</code></pre>
 
 In this example, the client had their settings configured to Post the additional fields for Name, DOB, and Zip as parameters.
+
 
 ###SMS Polls
 When a user responds to a Poll campaign-mode, the response can be Posted to your web service. To register your web server to receive a GET for this event...
