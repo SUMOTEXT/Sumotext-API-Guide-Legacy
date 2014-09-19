@@ -22,18 +22,17 @@ The Sumotext platform can be configured to send your web server an HTTP request 
 4. Click "Edit Post CRM".
 5. Check the "Post" checkbox.
 6.	Post Opt-In/Opt-Out: Selecting “msg” will post and return the text message from the mobile user. Selecting “Don’t Use” will not return the “msg” parameter. (See example below with “msg” selected.)
+7.Configure the Post parameters that Sumotext will send as a GET
 
 ###Example
 <pre class="code"><code>http://www.yourdomain.com/Post.aspx?mobile=2125551212&carrierId=VERIZONUS&key=SOMEKEYWORD&country=USA&shortcode=84700&Name=Mary Jane &Zip=10054&msg=MOBILEUSERSMESSAGE</code></pre>
-
-7.	Configure the Post parameters that Sumotext will send as a GET
 
 
 
 ###Sumotext will always post these 5 parameters first
 
 * `country`
-* `short code`
+* `shortcode`
 * `key`
 * `mobile`
 * `carrierId`
